@@ -1,0 +1,17 @@
+{
+  "name": "Youtube Popup Ad Eliminator",
+  "version": "1.0.0",
+  "description": "Live stress free eliminating that youtube annoying ad Popup",
+  "manifest_version": 3,
+  "author": "Mourad Aouinat",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Eliminate Youtube"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["eliminate.js"]
+    }
+  ]
+}
